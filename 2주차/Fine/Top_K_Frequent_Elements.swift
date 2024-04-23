@@ -18,7 +18,7 @@ class Solution {
     // gpt 개선
     func topKFrequentG(_ nums: [Int], _ k: Int) -> [Int]{
 
-        var numCount = [Int:Int](
+        var numCount = [Int:Int]()
         
         for num in nums {
             numCount[ num, default:0 ] += 1
