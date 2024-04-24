@@ -1,10 +1,10 @@
 class Soution {
     func encode( _strs: [String]) -> String {
-        var encdoeString = ""
+        var encodeString = ""
         for str in strs {
-            encdoeString += "\(str.count)#\(str)"
+            encodeString += "\(str.count)#\(str)"
         }
-        return encdoeString
+        return encodeString 
     }
 
     func decode(_ s: String) -> [String]{
