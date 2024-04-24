@@ -11,22 +11,21 @@ class Solution {
         }
         
         prev = 1
-        for i in (n-1)...0 {
+        for i in stride(from: n - 1, through: 0, by: -1) {
             var curr = prev*nums[i]
             suffixes.insert(curr, at:0)
             prev = curr
         }
         
         var ans: [Int] = [suffixes[1]]
-        for i in 1...n-2 {
-            var product = prefixes[i-1]*suffixes[i+1]
-            ans.append(product)
+        if 3 <= n {
+            for i in 1...n-2 {
+                var product = prefixes[i-1]*suffixes[i+1]
+                ans.append(product)
+            }
         }
         ans.append(prefixes[n-2])
         
         return ans
     }
 }
-
-var Instance = Solution()
-Instance.productExceptSelf([1,2,3,4])
