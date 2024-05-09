@@ -10,14 +10,14 @@ class Solution {
         var right = 1
         charDict[s[s.startIndex]] = 0
 
-        while right < s.count{
-            // var c = arrS[right]
-            // var c = s[right]
-            var c = s[s.index(s.startIndex, offsetBy: right)]
+        for (right, char) in s.enumerated() {
+            if right < 1 {
+                continue
+            }
+            let c = char
             left = max(left, charDict[c, default: -1]+1)
             charDict[c] = right
             maxLen = max(maxLen, right-left+1)
-            right += 1
         }
         return maxLen
     }
