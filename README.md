@@ -31,3 +31,33 @@ Swift로 Blind 75 문제를 풉니다.
 - [Longest Substring Without Repeating Characters]( https://leetcode.com/problems/longest-substring-without-repeating-characters/)
 - [Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/)
 - [Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring/)
+
+## Stack
+
+### [5주차](5주차)
+- [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+
+## Binary Search
+### [5주차](5주차)
+- [Find Minimum In Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/)
+- [Search In Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/description/)
+
+## Linked List
+### [6주차](6주차)
+- [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/)
+- [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/description/)
+- [Reorder List](https://leetcode.com/problems/reorder-list/)
+
+### [7주차](7주차)
+- [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+- [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/description/)
+- [Merge K Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/)
+
+## Tree
+### [8주차](8주차)
+- [Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree/)
+- [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/description/)
+- [Same Tree](https://leetcode.com/problems/same-tree/)
+- [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)
+
+  
