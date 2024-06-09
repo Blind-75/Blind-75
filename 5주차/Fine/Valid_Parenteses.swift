@@ -20,12 +20,9 @@ class Solution {
              // 여는 괄호의 경우에는 대응하는 key가 없음
             stack.append(char)
         }
-
-        return stack.isEmpty 
        
     }
-
-
-
+    return stack.isEmpty 
+    
     }
 }
