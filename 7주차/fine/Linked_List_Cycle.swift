@@ -8,13 +8,13 @@ public class ListNode {
     }
  }
 
-extension ListNode: Hashable {
-    public var val: Int
-    public var next: ListNode?
-
-    public init(_val: Int){
-        self.val = val 
-        self.next = nil 
+extension ListNode: Hashable { 
+        public static func == (lhs: ListNode, rhs: ListNode) -> Bool {
+        return lhs === rhs
+    }
+    
+    public func hash(into hasher: inout Hasher) {
+        hasher.combine(ObjectIdentifier(self))
     }
 }
 

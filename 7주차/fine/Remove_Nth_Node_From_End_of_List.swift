@@ -10,7 +10,7 @@ class Solution {
         }
 
         // 뒤에서 k번째 원소의 index = 전체길이(l) - k
-        let willRemove = length - n
+        let target = length - n
 
         // target이 0이 될때는 target.next가 head가 됨  
         if target == 0 {
