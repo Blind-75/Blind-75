@@ -1,5 +1,3 @@
-//https://leetcode.com/problems/same-tree/description/
-
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
@@ -15,8 +13,9 @@
  *     }
  * }
  */
+
 class Solution {
-    func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
+        func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
         if p == nil && q == nil {
             return true
         }
@@ -30,5 +29,27 @@ class Solution {
         }
 
         return false
+    }
+
+
+    func isSubtree(_ root: TreeNode?, _ subRoot: TreeNode?) -> Bool {
+        if (root == nil && subRoot == nil){
+            return true
+        }
+
+        if (root == nil && subRoot != nil) { //root는 nil이 아닌 상황 
+            return false
+        }
+
+        if (root != nil && subRoot == nil) {
+            return isSubtree(root!.left, subRoot) || isSubtree(root!.right, subRoot)
+        }
+
+        //root도 nil이 아니고 subRoot도 nil이 아닌 상황
+        if root!.val != subRoot!.val {
+            return isSubtree(root!.left, subRoot) || isSubtree(root!.right, subRoot)
+        }
+
+        return isSameTree(root, subRoot) || isSubtree(root!.left, subRoot) || isSubtree(root!.right, subRoot)
     }
 }
