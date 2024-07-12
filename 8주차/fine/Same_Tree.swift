@@ -18,7 +18,7 @@ func isSameTree(_ p: TreeNode?, _ q: TreeNode?) -> Bool {
     if p == nil || q == nil {
         return false 
     }
-    if p?.val != q!.val {
+    if  p!.val != q!.val {
         return false 
     }
 
