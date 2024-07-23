@@ -60,4 +60,13 @@ Swift로 Blind 75 문제를 풉니다.
 - [Same Tree](https://leetcode.com/problems/same-tree/)
 - [Subtree of Another Tree](https://leetcode.com/problems/subtree-of-another-tree/description/)
 
+### [9주차](9주차)
+- [Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/description/)
+- [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal/description/)
+- [Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/description/)
+- [Kth Smallest Element In a Bst](https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/)
+- [Construct Binary Tree From Preorder And Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/description/)
+- [Binary Tree Maximum Path Sum(Option)](https://leetcode.com/problems/binary-tree-maximum-path-sum/description/)
+- [Serialize and Deserialize Binary Tree(Option)](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/description/)
+
   
