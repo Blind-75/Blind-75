@@ -28,9 +28,3 @@ class Solution {
         return result
     }
 }
-
-// 테스트
-let solution = Solution()
-print(solution.combinationSum([2,3,6,7], 7))
-print(solution.combinationSum([2,3,5], 8))
-print(solution.combinationSum([2], 1))
