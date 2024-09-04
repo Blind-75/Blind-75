@@ -19,7 +19,7 @@ class WordDictionary {
     }
     
     func search(_ word: String) -> Bool {
-       return searchHelper(word, 0, root)
+       return searchHelper(Array(word), 0, root)
     }
 
     func searchHelper(_ word: [Character], _ index: Int, _ node: TrieNode) -> Bool {
