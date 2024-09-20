@@ -1,6 +1,9 @@
 class Solution {
-    func validTree(_ n: Int, _ edges: [[Int]]) -> Bool { 
-        var path = Set<Int>()
+    func validTree(_ n: Int, _ edges: [[Int]]) -> Bool {
+        if edges.count != n - 1 {
+            return false
+        }
+
         var visited = Set<Int>()
 
         var childrenList = [Int: [Int]]()
@@ -12,30 +15,36 @@ class Solution {
             } else {
                 childrenList[i[0]] = [i[1]]
             }
+
+            if var children = childrenList[edge[1]] {
+                children.append(edge[0])
+                childrenList[edge[1]] = children
+            } else {
+                childrenList[edge[1]] = [edge[0]]
+            }
         }
 
-        func dfs(value: Int) -> Bool {
-            if path.contains(value) { return false }
-            path.insert(value) 
-            if let neighbours = childrenList[value] {
-                for neighbour in neighbours {
-                    if !dfs(value: neighbour) {
+        func dfs(value: Int, parent: Int) -> Bool {
+            visited.insert(value)
+            if let neighbors = childrenList[node] {
+                for neighbor in neighbors {
+                    if neighbor == parent {
+                        continue // Ignore the edge back to the parent
+                    }
+                    if visited.contains(neighbor) {
+                        return false // Cycle detected
+                    }
+                    if !dfs(node: neighbor, parent: node) {
                         return false
                     }
                 }
             }
-            path.remove(value)
             return true
         }
 
-        for item in edges {
-            if !visited.contains(item[0]) {
-                if !dfs(value: item[0]){
-                    return false
-                }
-                visited.insert(item[0])
-            }
+        if !dfs(node: 0, parent: -1) {
+            return false
         }
-        return true
+        return visited.count == n
     }
 }
