@@ -8,10 +8,11 @@ class Solution {
         minCoinsForAmt[0] = 0 
 
         for coin in coins{
+            guard amount-coin >= 0 else {continue}
             for i in coin...amount{
                 minCoinsForAmt[i] = min(minCoinsForAmt[i], minCoinsForAmt[i - coin] + 1)
             }
         }
         return minCoinsForAmt[amount] == amount + 1 ? -1 : minCoinsForAmt[amount]
     }
-}
+}m
