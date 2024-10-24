@@ -7,7 +7,6 @@ class Solution {
         for edge in edges {
             var node = edge[0]
             var nextNode = edge[1]
-: [Int]
             if var existing = dictionary[node] {
                 existing.append(nextNode)
                 dictionary[node] = existing
